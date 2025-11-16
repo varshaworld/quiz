@@ -1,0 +1,77 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: cursive;
+}
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 15px;
+}
+nav a{
+    color: #FFA4A4;
+    text-decoration: none;
+    font-weight: bolder;
+    text-shadow: 1px 1px 1px black;
+}
+header{
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9IXrcyImf2f1Vsy425kKtaV_UmR5X0abd3w&s");
+    background-size: cover;
+    background-position: center;
+}
+header h1{
+    text-align: center;
+    padding: 45px;
+    color: #FFA4A4;
+    text-shadow: 2px 2px 2px black;
+    font-size: 5vw;
+}
+footer{
+    text-align: center;
+    background-color: #FFA4A4;
+    padding: 20px;
+}
+.flexbox{
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    padding: 20px;
+}
+.flexbox img{
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+.col{
+    flex: 1;
+}
+.btn{
+    background-color:#FFA4A4;
+    padding: 10px;
+    border-radius: 10px;
+    margin: 5px 5px;
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+}
+.col h3{
+    margin-bottom: 10px;
+    color: maroon;
+}
+.btn:active{
+    background-color: peachpuff;
+    color: black;
+}
+.btn:hover{
+    border: 2px solid black;
+}
+#greeting{
+    text-align: center;
+    background-color: black;
+    color: white;
+    padding: 10px;
+    font-weight: bolder;
+    font-size: 2vw;
+}

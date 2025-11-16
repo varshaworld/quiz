@@ -60,3 +60,28 @@ const questions = [
     answer: "Carbon Dioxide"
   }
 ];
+let qbox = document.getElementById('qbox')
+questions.map(function(q){
+    let div = document.createElement('div')
+    h2 = document.createElement('h2')
+    h2.innerHTML = q.question
+    div.appendChild(h2)
+    q.options.map(function(o){
+        btn = document.createElement('button')
+        btn.innerHTML = o
+        div.appendChild(btn)
+        btn.addEventListener('click', function(e){
+            check(e,q)
+        })
+    })
+    qbox.appendChild(div)
+
+})
+function check(event,q){
+    if (event.target.innerHTML == q.answer){
+        alert('correct answer')
+    }
+    else{
+        alert('wrong answer')
+    }
+}
